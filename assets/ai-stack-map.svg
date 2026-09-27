@@ -1,0 +1,132 @@
+<svg width="900" height="360" viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flow" x1="110" y1="180" x2="790" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      fill: #0F172A;
+    }
+    .stage {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      fill: #64748B;
+    }
+    .tech {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      fill: #334155;
+    }
+    .box {
+      fill: #F8FAFC;
+      stroke: #CBD5E1;
+      stroke-width: 1.2;
+    }
+    .accent {
+      stroke: url(#flow);
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      filter: url(#softGlow);
+    }
+    .pulse {
+      stroke: #67E8F9;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 1 140;
+      animation: move 2.8s linear infinite;
+      filter: url(#softGlow);
+    }
+    .pulse.d2 { animation-delay: -.7s; }
+    .pulse.d3 { animation-delay: -1.4s; }
+    .dot {
+      fill: #8B5CF6;
+      animation: breathe 2s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+      filter: url(#softGlow);
+    }
+    .dot.d2 { animation-delay: -.5s; }
+    .dot.d3 { animation-delay: -1s; }
+    .dot.d4 { animation-delay: -1.5s; }
+    @media (prefers-color-scheme: dark) {
+      .title { fill: #E2E8F0; }
+      .stage { fill: #94A3B8; }
+      .tech { fill: #CBD5E1; }
+      .box { fill: #020617; stroke: #334155; }
+    }
+    @keyframes move {
+      0% { stroke-dashoffset: 0; opacity: .2; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { stroke-dashoffset: -140; opacity: .2; }
+    }
+    @keyframes breathe {
+      0%,100% { opacity:.45; transform:scale(.8); }
+      50% { opacity:1; transform:scale(1.2); }
+    }
+  </style>
+
+  <text x="450" y="36" text-anchor="middle" class="title">AI ENGINEERING STACK</text>
+
+  <!-- connectors -->
+  <line x1="255" y1="180" x2="315" y2="180" class="accent"/>
+  <line x1="465" y1="180" x2="525" y2="180" class="accent"/>
+  <line x1="675" y1="180" x2="735" y2="180" class="accent"/>
+
+  <line x1="255" y1="180" x2="315" y2="180" class="pulse"/>
+  <line x1="465" y1="180" x2="525" y2="180" class="pulse d2"/>
+  <line x1="675" y1="180" x2="735" y2="180" class="pulse d3"/>
+
+  <!-- boxes -->
+  <rect x="45" y="92" width="210" height="176" rx="16" class="box"/>
+  <rect x="315" y="92" width="150" height="176" rx="16" class="box"/>
+  <rect x="525" y="92" width="150" height="176" rx="16" class="box"/>
+  <rect x="735" y="92" width="120" height="176" rx="16" class="box"/>
+
+  <!-- stage 1 -->
+  <circle cx="150" cy="118" r="4" class="dot"/>
+  <text x="150" y="145" text-anchor="middle" class="stage">MODEL</text>
+  <text x="150" y="176" text-anchor="middle" class="tech">Python</text>
+  <text x="150" y="199" text-anchor="middle" class="tech">PyTorch · TensorFlow</text>
+  <text x="150" y="222" text-anchor="middle" class="tech">OpenCV</text>
+
+  <!-- stage 2 -->
+  <circle cx="390" cy="118" r="4" class="dot d2"/>
+  <text x="390" y="145" text-anchor="middle" class="stage">INTELLIGENCE</text>
+  <text x="390" y="176" text-anchor="middle" class="tech">RAG · NLP</text>
+  <text x="390" y="199" text-anchor="middle" class="tech">Embeddings</text>
+  <text x="390" y="222" text-anchor="middle" class="tech">Vector Search</text>
+
+  <!-- stage 3 -->
+  <circle cx="600" cy="118" r="4" class="dot d3"/>
+  <text x="600" y="145" text-anchor="middle" class="stage">BACKEND</text>
+  <text x="600" y="176" text-anchor="middle" class="tech">FastAPI</text>
+  <text x="600" y="199" text-anchor="middle" class="tech">PostgreSQL</text>
+  <text x="600" y="222" text-anchor="middle" class="tech">pgvector · Redis</text>
+
+  <!-- stage 4 -->
+  <circle cx="795" cy="118" r="4" class="dot d4"/>
+  <text x="795" y="145" text-anchor="middle" class="stage">SYSTEM</text>
+  <text x="795" y="176" text-anchor="middle" class="tech">Docker</text>
+  <text x="795" y="199" text-anchor="middle" class="tech">Git</text>
+  <text x="795" y="222" text-anchor="middle" class="tech">GitHub Actions</text>
+
+  <text x="450" y="324" text-anchor="middle" class="stage">MODEL → INTELLIGENCE → BACKEND → SYSTEM</text>
+</svg>
