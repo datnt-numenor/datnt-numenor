@@ -12,8 +12,8 @@ Currently exploring better ways to build practical AI systems that are accurate,
 
 ## Tech Stack
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,fastapi,postgres,supabase,react,nextjs,tailwind,docker,git" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/main/assets/ai-stack-map.svg" alt="Dat Nguyen AI Engineering Stack" width="100%" />
 </p>
 
 ---
