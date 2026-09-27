@@ -2,9 +2,11 @@
 
 ## AI Engineer
 
-Building production-ready AI systems, real-time inference pipelines, and scalable AI backend architectures.
+Building intelligent AI systems that turn unstructured data into useful applications.
 
-Focused on **Computer Vision, Deep Learning, RAG systems, NLP, and AI deployment**.
+My main interests are **RAG, NLP, Computer Vision, Deep Learning, and real-time inference**. I enjoy working across the AI pipeline — from data preparation and model integration to retrieval, evaluation, and backend services.
+
+Currently exploring better ways to build practical AI systems that are accurate, efficient, and useful in real-world applications.
 
 ---
 
@@ -18,4 +20,10 @@ Focused on **Computer Vision, Deep Learning, RAG systems, NLP, and AI deployment
 
 ## GitHub Activity
 
-![GitHub contribution graph](https://github-readme-activity-graph.vercel.app/graph?username=datnt-numenor&theme=github-compact&hide_border=true)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
