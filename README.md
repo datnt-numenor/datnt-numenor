@@ -1,16 +1,21 @@
-## Hi there 👋
+# Dat Nguyen
 
-<!--
-**datnt-numenor/datnt-numenor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## AI Engineer
 
-Here are some ideas to get you started:
+Building production-ready AI systems, real-time inference pipelines, and scalable AI backend architectures.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Focused on **Computer Vision, Deep Learning, RAG systems, NLP, and AI deployment**.
+
+---
+
+## Tech Stack
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,fastapi,postgres,supabase,react,nextjs,tailwind,docker,git" />
+</p>
+
+---
+
+## GitHub Activity
+
+![GitHub contribution graph](https://github-readme-activity-graph.vercel.app/graph?username=datnt-numenor&theme=github-compact&hide_border=true)
