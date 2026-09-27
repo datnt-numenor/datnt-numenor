@@ -12,8 +12,8 @@
 <rect x="1" y="1" width="998" height="148" rx="20" fill="url(#bg)" stroke="#30363d"/>
 <text x="38" y="48" class="name">&gt;</text>
 <line x1="70" y1="30" x2="70" y2="116" stroke="#2ea043" stroke-width="4"/>
-<text x="98" y="58" class="quote">“Building AI systems that see, understand,</text>
-<text x="98" y="86" class="quote">and create real value in the world.”</text>
+<text x="98" y="58" class="quote">“Learning is like rowing upstream —</text>
+<text x="98" y="86" class="quote">stop moving forward, and you start falling behind.”</text>
 <text x="98" y="116" class="name">— Dat Nguyen</text>
 <text x="735" y="111" class="muted">AI × ENGINEERING × CURIOSITY</text>
 </svg>
