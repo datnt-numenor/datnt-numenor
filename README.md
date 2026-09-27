@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/main/assets/activity-wave.svg?v=20260927-2" alt="Dat Nguyen GitHub Activity" width="100%" />
+  <img src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/main/assets/activity-wave.svg?v=20260927-3" alt="Dat Nguyen GitHub Activity" width="100%" />
 </p>
 
 <p align="center">
