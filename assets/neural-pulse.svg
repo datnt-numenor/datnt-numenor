@@ -1,0 +1,103 @@
+<svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="edge" x1="120" y1="120" x2="780" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="0.5" stop-color="#8B5CF6" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="nodeGlow">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.35" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </radialGradient>
+    <filter id="glow" x="-200%" y="-200%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .edge { stroke: url(#edge); stroke-width: 1.6; opacity: .7; }
+    .node { fill: #0F172A; stroke: #64748B; stroke-width: 1.5; }
+    .core { fill: url(#nodeGlow); filter: url(#glow); }
+    .pulse-line {
+      stroke: #67E8F9;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-dasharray: 1 600;
+      animation: travel 4.2s linear infinite;
+      filter: url(#glow);
+    }
+    .pulse-line.delay-1 { animation-delay: -1.4s; }
+    .pulse-line.delay-2 { animation-delay: -2.8s; }
+    .node-pulse { animation: breathe 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .node-pulse.delay-1 { animation-delay: -.8s; }
+    .node-pulse.delay-2 { animation-delay: -1.6s; }
+    .label {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+      letter-spacing: .16em;
+      fill: #64748B;
+    }
+    @media (prefers-color-scheme: dark) {
+      .node { fill: #020617; stroke: #475569; }
+      .label { fill: #94A3B8; }
+    }
+    @keyframes travel {
+      0% { stroke-dasharray: 1 600; stroke-dashoffset: 0; opacity: 0; }
+      8% { opacity: 1; }
+      55% { stroke-dasharray: 95 600; }
+      92% { opacity: 1; }
+      100% { stroke-dasharray: 1 600; stroke-dashoffset: -600; opacity: 0; }
+    }
+    @keyframes breathe {
+      0%, 100% { opacity: .45; transform: scale(.82); }
+      50% { opacity: 1; transform: scale(1.28); }
+    }
+  </style>
+
+  <!-- network edges -->
+  <g class="edge">
+    <path d="M125 70 L310 45 L455 120 L610 55 L775 82"/>
+    <path d="M125 70 L300 120 L455 120 L610 55"/>
+    <path d="M125 170 L300 120 L455 120 L615 175 L775 82"/>
+    <path d="M125 170 L315 190 L455 120 L615 175 L780 165"/>
+    <path d="M310 45 L300 120 L315 190"/>
+    <path d="M610 55 L615 175"/>
+    <path d="M455 120 L775 82"/>
+    <path d="M455 120 L780 165"/>
+  </g>
+
+  <!-- animated signal paths -->
+  <path class="pulse-line" d="M125 70 L310 45 L455 120 L610 55 L775 82"/>
+  <path class="pulse-line delay-1" d="M125 170 L300 120 L455 120 L615 175 L780 165"/>
+  <path class="pulse-line delay-2" d="M125 70 L300 120 L455 120 L615 175 L775 82"/>
+
+  <!-- nodes -->
+  <g>
+    <circle class="node" cx="125" cy="70" r="8"/>
+    <circle class="node" cx="125" cy="170" r="8"/>
+    <circle class="node" cx="310" cy="45" r="8"/>
+    <circle class="node" cx="300" cy="120" r="8"/>
+    <circle class="node" cx="315" cy="190" r="8"/>
+    <circle class="node" cx="455" cy="120" r="10"/>
+    <circle class="node" cx="610" cy="55" r="8"/>
+    <circle class="node" cx="615" cy="175" r="8"/>
+    <circle class="node" cx="775" cy="82" r="8"/>
+    <circle class="node" cx="780" cy="165" r="8"/>
+  </g>
+
+  <g>
+    <circle class="core node-pulse" cx="125" cy="70" r="3.5"/>
+    <circle class="core node-pulse delay-1" cx="300" cy="120" r="3.5"/>
+    <circle class="core node-pulse delay-2" cx="455" cy="120" r="4.5"/>
+    <circle class="core node-pulse delay-1" cx="610" cy="55" r="3.5"/>
+    <circle class="core node-pulse" cx="615" cy="175" r="3.5"/>
+    <circle class="core node-pulse delay-2" cx="780" cy="165" r="3.5"/>
+  </g>
+
+  <text x="450" y="226" text-anchor="middle" class="label">LEARNING PATTERNS · BUILDING INTELLIGENCE</text>
+</svg>
