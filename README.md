@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/main/assets/terminal-footer.svg?v=20260927-4" alt="Dat Nguyen profile footer" width="100%" />
+  <img src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/main/assets/terminal-footer.svg?v=20260927-5" alt="Dat Nguyen profile footer" width="100%" />
 </p>
