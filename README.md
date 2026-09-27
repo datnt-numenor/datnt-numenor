@@ -18,12 +18,8 @@ Currently exploring better ways to build practical AI systems that are accurate,
 
 ---
 
-## GitHub Activity
+## Neural Activity
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/output/github-contribution-grid-snake.svg" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/datnt-numenor/datnt-numenor/main/assets/neural-pulse.svg" alt="Dat Nguyen Neural Pulse" width="100%" />
 </p>
